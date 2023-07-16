@@ -1,2 +1,11 @@
-<span>{{ title }} app is running!</span>
+<h1>{{ title }} app is running!</h1>
+<p>{{users | json}}</p>
+<ol *ngFor="let user of users">
+    <li>{{user._id}}</li>
+    <li>{{user.name}}</li>
+    <li>{{user.email}}</li>
+    <li>{{user.password}}</li>
+    <li>{{user.isAdmin}}</li>
+
+</ol>
 <router-outlet></router-outlet>

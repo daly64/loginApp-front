@@ -1,15 +1,10 @@
-<div class=" flex w-full h-screen">
-  <div class="flex-col  bg-amber-100 "><h1>{{ title }} app is running!</h1>
-    <p>{{users | json}}</p>
-    <ol *ngFor="let user of users">
-      <li>{{user._id}}</li>
-      <li>{{user.name}}</li>
-      <li>{{user.email}}</li>
-      <li>{{user.password}}</li>
-      <li>{{user.isAdmin}}</li>
-    </ol>
+<div class=" flex w-full h-screen ">
+  <div class="flex-col h-screen">
+<!--    <h1>{{ title }} app is running!</h1>-->
+    <div class="flex-row w-screen h-screen border-amber-400 ">
 
-      <div class=" w-1/2 h-1/2 bg-gray-400 m-auto border-2 border-amber-400 ">
+
+      <div class=" w-1/3 h-1/2 bg-gray-400 m-auto  border-2">
         <p>{{user._id}}</p>
         <p>{{user.name}}</p>
         <p>{{user.email}}</p>
@@ -18,10 +13,9 @@
 
       </div>
 
-
-      <router-outlet></router-outlet>
     </div>
-
-
   </div>
+
+  <router-outlet></router-outlet>
+</div>
 

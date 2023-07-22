@@ -1,13 +1,18 @@
 <div>
   <h1>{{ title }} app is running!</h1>
 
-  <div *ngFor="let user of users">
-    <p>{{ user._id }}</p>
-    <p>{{ user.name }}</p>
-    <p>{{ user.email }}</p>
-    <p>{{ user.isAdmin }}</p>
-    <p>{{ user.__v }}</p>
-  </div>
+  <p>{{ user.name }}</p>
+  <p>{{ user.image }}</p>
+  <img [src]="imageurl()" alt="profil" />
+  <br />
+  <label>name :</label>
+  <input type="text" placeholder="name" [(ngModel)]="loginUser.name" />
+  <br />
+  <label for="password">password :</label>
+  <input type="text" placeholder="password" [(ngModel)]="loginUser.password" />
+  <br />
+  <button type="submit" (click)="login()">Login</button>
 
+  <p>{{ responce }}</p>
   <router-outlet></router-outlet>
 </div>

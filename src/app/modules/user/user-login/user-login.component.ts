@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { User } from '../models/User';
 import { UserService } from '../services/user.service';
 
@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserLoginComponent {
   constructor(private userService: UserService, private router: Router) {}
+  title = 'User Login Page';
   baseURL: String = 'https://loginapp-api-ra2l.onrender.com/';
   user: User = new User();
   responce: String = '';
@@ -30,8 +31,5 @@ export class UserLoginComponent {
         this.responce = error.error.message;
       },
     });
-    /*     if (this.responce == 'login Ok') {
-      this.router.navigate(['detail']);
-    } */
   }
 }

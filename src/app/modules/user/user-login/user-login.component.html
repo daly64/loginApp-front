@@ -1,0 +1,10 @@
+<p>user-login works!</p>
+<label>name :</label>
+<input type="text" placeholder="name" [(ngModel)]="user.name" />
+<br />
+<label for="password">password :</label>
+<input type="password" placeholder="password" [(ngModel)]="user.password" />
+<br />
+<button type="submit" (click)="login()">Login</button>
+
+<p>{{ responce }}</p>

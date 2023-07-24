@@ -15,7 +15,7 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   getAll = () => this.http.get<User[]>(this.baseURL + 'users');
-  getOn = (id: string): Observable<any> =>
+  getOn = (id: string): Observable<User> =>
     this.http.get<User>(this.baseURL + `users/get/${id}`);
   login = (user: User): Observable<any> =>
     this.http.post<User>(this.baseURL + `users/login/`, user);

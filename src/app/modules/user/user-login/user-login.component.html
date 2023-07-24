@@ -1,5 +1,15 @@
-<img [src]="testUser.imageUrl" />
+<!-- <img [src]="testUser.imageUrl" />
 <h5>{{ title }}</h5>
 <input type="text" placeholder="name" [(ngModel)]="user.name" />
 <input type="password" placeholder="password" [(ngModel)]="user.password" />
 <button type="submit" (click)="login()">Login</button>
+ -->
+<div class="container">
+  <div class="loginBox">
+    <h5>{{ title }}</h5>
+    <img [src]="testUser.imageUrl" />
+    <input type="text" placeholder="name" [(ngModel)]="user.name" />
+    <input type="password" placeholder="password" [(ngModel)]="user.password" />
+    <button type="submit" (click)="login()">Login</button>
+  </div>
+</div>

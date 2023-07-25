@@ -7,7 +7,7 @@ img {
 }
 .container {
   position: fixed;
-  /* background-color: lightblue; */
+  background-color: lightsteelblue;
   height: 100%;
   width: 100%;
   top: 0;
@@ -33,4 +33,42 @@ img {
 input {
   height: 10%;
   width: 75%;
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: steelblue;
+}
+
+button {
+  background-color: steelblue;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  height: 100%;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+}
+.row {
+  height: 12%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+}
+a:hover {
+  color: steelblue;
 }

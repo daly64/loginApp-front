@@ -6,10 +6,12 @@
  -->
 <div class="container">
   <div class="loginBox">
-    <h5>{{ title }}</h5>
-    <img [src]="testUser.imageUrl" />
+    <h2>{{ title }}</h2>
     <input type="text" placeholder="name" [(ngModel)]="user.name" />
     <input type="password" placeholder="password" [(ngModel)]="user.password" />
-    <button type="submit" (click)="login()">Login</button>
+    <div class="row">
+      <button type="submit" (click)="login()">Login</button>
+      <a> Register</a>
+    </div>
   </div>
 </div>
